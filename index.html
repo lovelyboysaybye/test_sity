@@ -1,0 +1,258 @@
+﻿<html>
+ 
+<head>
+ 
+<title>Гра в Математику</title>
+ 
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ 
+
+  <script language="JavaScript">
+
+
+function add(){
+var a = document.txt.one.value;
+var b = document.txt.two.value;
+return  a*1 + b*1;
+              }
+var o = 0;
+var s;
+window.onload=function(){
+  document.txt.one.value = getRandomIn();
+  document.txt.two.value = getRandomIn();
+}
+
+function minu(){
+var a = document.txt.one.value;
+var b = document.txt.two.value;
+return  a*1 - b*1;
+              }
+function draw1(){
+var canvas = document.getElementById("can2");     
+var context = canvas.getContext("2d");   
+canvas.width = 150;
+canvas.height = 200;
+s = canvas.width/2;
+context.lineWidth=3;
+context.fillStyle="white";
+context.fillRect(25, 25, 120, 120);
+context.fillStyle="green";
+context.strokeRect(25, 25, 120, 120);
+}
+function draw2(){
+  var canvas = document.getElementById("can3");     
+var context = canvas.getContext("2d");  
+context.lineWidth=3;
+canvas.width = 120;
+canvas.height = 200;
+context.fillStyle="white";
+context.arc(60,80, 60,0,Math.PI*2,true);
+context.fill();
+context.lineWidth=3;
+context.fillStyle="green";
+context.arc(60,80, 60,0,Math.PI*2,true);
+context.stroke();
+}
+function draw3(){
+  var canvas = document.getElementById("can4");     
+var context = canvas.getContext("2d");  
+canvas.width = 130;
+canvas.height = 200;
+context.lineWidth=3;
+context.fillStyle="white";
+context.beginPath();
+context.moveTo(0, 125); 
+context.lineTo(105, 125); 
+context.lineTo(105, 25); 
+context.lineTo(0, 125);
+context.fill();
+context.fillStyle="green";
+context.beginPath();
+context.moveTo(0, 125); 
+context.lineTo(105, 125); 
+context.lineTo(105, 25); 
+context.lineTo(0, 125);
+context.stroke();
+}
+
+function getRandomIn() {
+  return Math.floor(Math.random() * (50*1 - 1)) + 1;
+}
+
+function getRandomI() {
+  return Math.floor(Math.random() * (100 - 1)) + 1;
+}
+function getRandomInt(maxi) {
+  return Math.floor(Math.random() * (maxi*1 - 1)) + 1;
+}
+function getRandom() {
+  return Math.floor(Math.random() * (99*1 - 50)) + 50;
+}
+
+function pidk(){
+alert('Площа квадрата: S = a*a. Площа кола: S = 3,14 * r * r. Площа прямокутного трикутника: S = 1/2 * a * a!)');
+;
+}
+function next2(){
+document.getElementById("a4").style.visibility  = "hidden";
+document.getElementById("a2").style.visibility  = "hidden";
+document.getElementById("z").style.visibility  = "hidden";
+document.getElementById("zv2").style.visibility  = "visible";
+}
+function check(){
+if (o <5){
+if (document.txt.three.value*1 == add())
+{ o +=1; document.txt.one.value = getRandomIn();
+  document.txt.two.value = getRandomIn(); document.txt.three.value = ""; document.getElementById("a1").style.color ="#48e434"; document.getElementById("a1").style.border =" 3px solid #48e434";document.txt1.l.value = 'Вірно!'; if (o == 5) {document.k.src="minus.PNG"; max = getRandomI(); document.txt.one.value = max;
+  document.txt.two.value = getRandomInt(max);}} else {document.txt.three.value = ""; document.getElementById("a1").style.color = "#e43440"; document.getElementById("a1").style.border ="3px solid #e43440";document.txt1.l.value = 'Помилка!';}
+} else {
+if (document.txt.three.value*1 == minu())
+{ o +=1; 
+   var max = 0;
+  max = getRandomI(); document.txt.one.value = max;
+  document.txt.two.value = getRandomInt(max); document.txt.three.value = ""; document.getElementById("a1").style.color ="#48e434"; document.getElementById("a1").style.border =" 3px solid #48e434";document.txt1.l.value = 'Вірно!'; if (o == 10) document.getElementById("a2").style.visibility = "visible";} else {document.txt.three.value = ""; document.getElementById("a1").style.color = "#e43440"; document.getElementById("a1").style.border ="3px solid #e43440";document.txt1.l.value = 'Помилка!';  }
+}
+}
+
+var x1, x2, x3;
+   x1 = 0; x2 = 0; x3 = 0;
+function check2(){
+
+  if (x1 == 0){
+if (document.getElementById("c1").value == "25")
+{ x1 = 1; document.getElementById("c1").value = "Вірно!"; document.getElementById("c1").style.border = " 3px solid #48e434"; document.getElementById("c1").disabled = true;} else {x1 = 0; document.getElementById("c1").value = ""; document.getElementById("c1").placeholder = "Помилка!"; document.getElementById("c1").style.border = " 3px solid #e43440";}
+}
+ if (x2 == 0){
+if (document.getElementById("c2").value == "19,625" |document.getElementById("c2").value == "19.625" & x2 == 0)
+{ x2 = 1;document.getElementById("c2").value = "Вірно!"; document.getElementById("c2").style.border = " 3px solid #48e434"; document.getElementById("c1").disabled = true;} else { x2 = 0;document.getElementById("c2").value = ""; document.getElementById("c2").placeholder = "Помилка!"; document.getElementById("c2").style.border = " 3px solid #e43440";}
+}
+ if (x3 == 0){
+if (document.getElementById("c3").value == "12,5" |document.getElementById("c3").value == "12.5" & x3 == 0)
+{ x3 = 1;document.getElementById("c3").value = "Вірно!"; document.getElementById("c3").style.border = " 3px solid #48e434"; document.getElementById("c1").disabled = true;} else {x3 = 0; document.getElementById("c3").value = ""; document.getElementById("c3").placeholder = "Помилка!"; document.getElementById("c3").style.border = " 3px solid #e43440";}
+}
+if (x1 == 1 & x2 == 1 & x3 == 1)
+{document.getElementById("c3").value = "Красава!"}
+}
+
+</script>
+
+<meta charset=UTF8>
+<style>
+.scale img {
+ -moz-transition: all 0.7s ease-out;
+ -o-transition: all 0.7s ease-out;
+ -webkit-transition: all 0.7s ease-out;
+ }
+ 
+.scale img:hover{
+ -webkit-transform: scale(1.1);
+ -moz-transform: scale(1.1);
+ -o-transform: scale(1.1);
+ }
+</style>
+</head>
+ 
+<body style="overflow-x: hidden; margin-left: 0px; width: 100%;">
+<div class="top">
+<div class="toptext">
+<H4 style="color: white; padding-left: 7px">MATHEASY.COM</H4>
+</div>
+<div class="hhop">
+<div class="el"  id="a4" style="position: absolute; top: 100px; z-index: 3;  width: 100%; visibility: visible;">
+<form name="txt">
+<input type="email" name="one" class="form-control" id="hh" size="2" style="border: 5px solid #48e434; margin: 2px; display: inline-block; font-weight: bold; height: 15%; margin-left:-176px; background-color:white; color: #48e434; text-align: center; " disabled>
+<IMG SRC="plus.PNG" name="k" class ="k" style="" >
+<input type="email" name="two"class="form-control" id="hhh" size="2" style="border: 5px solid #48e434; margin: 2px; display: inline-block;  font-weight: bold;  height: 15%; background-color:white; color: #48e434; text-align: center; " disabled>
+<IMG SRC="ravno.PNG" class ="kk" style="" >
+<input type="email" name="three"class="form-control option" id="hhhh" size="2" style="border: 5px solid #48e434; margin: 2px; display: inline-block; font-weight: bold;  height: 15%; background-color:white; color: #48e434; text-align: center; "  >
+</form>
+<div  class="rap" style="display: inline-block;">
+ <form name="txt1">
+  <input  type="button" id="a2"  value="Наступне завдання!"class="btn btn-outline-primary option-button"  style=" background-color: white; display: inline-block; border: 3px solid #00c5ff; color: #00c5ff;  font-weight: bold;  margin-left: -176px;  height: 47px; visibility: hidden;  "  onclick="next2()" >
+<input type="button" id="a3" value="Перевірити!"class="btn btn-outline-primary"  style=" background-color: white; display: inline-block; border: 3px solid #48e434; color: #48e434;   font-weight: bold;   margin-left: 2px; height: 47px;"  onclick="check()" >
+<input type="email"  name="l" value="" id="a1" class="form-control"  style="border: 3px solid #48e434;    display: inline-block; font-weight: bold;  background-color:white; color: #48e434;  height: 45px;" disabled>
+</form>
+</div>
+</div>
+
+
+<form class="form-inline" action="/action_page.php">
+  <div class="form-group">
+    <input type="email" class="form-control" id="email" placeholder="Login" size="10">
+  </div>
+  <div class="form-group">
+    <input type="password" class="form-control" id="pwd" placeholder="Password" size="10">
+  </div>
+  <button type="submit" class="btn btn-outline-primary option-button">Log in</button>
+  <button type="submit" class="btn btn-outline-primary option-button">Sign in</button>
+</form>
+
+</div>
+</div>
+
+<div class="hhead">
+<IMG SRC="OBLAKO.PNG" style="position: absolute; width: 100%; z-index: 1; clip: rect(0px, auto, 300px, 0px);">
+<div class="scale" style="z-index: 1">
+<IMG SRC="DEREVO.PNG" name="derevo1" style="z-index: 2; margin-left:  3%; margin-top: 10px; position: relative;" width="300">
+<IMG SRC="DEREVO.PNG" name="derevo2" style="z-index: 2; float: right; position: relative; margin-top: 10px; margin-right:  3%;" width="300">
+</div>
+</div>
+<div class="zz" style="z-index:10; ">
+<div class="z2" style=" background-image: url(polyana2.jpg);">
+<div id="ww1" style="position: absolute; margin-top: 207px;  height: 300px">
+  <div class="zv2"  id="zv2" style=" justify-content: none; flex-direction: column;  display: inline-block; width: 100vw; visibility: hidden; ">
+
+<div style=" display: inline-block; padding-left: 50%; margin-left:-258px; z-index:2; margin-top: -182px;">
+<canvas width= 100% height= "150px" id="can2" style="">
+  <script> draw1()</script>
+</canvas>
+<canvas width= 100% height= "150px" id="can3" style="margin-left: 50px;">
+  <script> draw2()</script>
+</canvas>
+<canvas width= 100% height= "150px" id="can4" style="margin-left: 50px;">
+  <script> draw3()</script>
+</canvas>
+</div>
+
+<div style="padding-left: 50%; margin-left:-260px;">
+<input type="email"  id="c1" placeholder="Введіть число" id="b1" class="form-control"  style="border: 3px solid #48e434;    display: inline-block; font-weight: bold;  background-color:white; color: #48e434;  height: 45px; width: 130px;">
+<input type="email"  id="c2" placeholder="Введіть число" id="b2" class="form-control"  style="border: 3px solid #48e434;    display: inline-block; font-weight: bold;  background-color:white; color: #48e434;  height: 45px; width: 130px; margin-left: 64px;">
+<input type="email"  id="c3" placeholder="Введіть число" id="b3" class="form-control"  style="border: 3px solid #48e434;    display: inline-block; font-weight: bold;  background-color:white; color: #48e434;  height: 45px; width: 130px; margin-left: 42px;">
+  </div>
+  <div style="display: block;">
+  <div class="ou">
+
+<input type="button" id="b11" value="Підказка!"class="btn btn-outline-primary"  style=" background-color: white; display: inline-block; border: 3px solid #00c5ff; color: #00c5ff;   font-weight: bold; height: 70px; font-size: 27; z-index: 7; "  onclick="pidk()" >
+</div>
+<div>
+<input type="button" id="b22" value="Перевірити!"class="btn btn-outline-primary"  style=" background-color: white; display: inline-block; border: 3px solid #48e434; color: #48e434;   font-weight: bold; height: 70px; font-size: 20;  margin-right: 40px; z-index: 7"  onclick="check2()">
+
+</div>
+</div>
+<div style="z-index: 6;  position: absolute" id="ou3">
+<H4 id="hh4" style=" padding: 5px; background-color: white; color: #00c5ff; border: 3px solid #00c5ff; "><B>Обчисліть площу кожної фігури вважаючи, що <I>довжина квадрата, діаметр кола, і довжина катетів трикутника рівні 5 см.</I></B></H4>
+</div>
+</div>
+
+<div class="z"  id="z" style="z-index: 3; width: 100%;  display: flex; justify-content: center; flex-direction: column; text-align: center; border: 5px solid white; margin-left: 0px; margin-right: 20px; margin-bottom: 10px;  visibility: visible;">
+<H1 style="font-size: 75; font-weight: bold; color: white; z-index: 2;">Завдання 2</H1>
+</div>
+</div>
+</div>
+
+
+<div class="z3" style="width: 100%; height: 300px;display: flex; justify-content: center; flex-direction: column; text-align: center; border: 5px solid white; margin-left: 0px; margin-right: 20px; margin-bottom: 10px;">
+<H1 style="font-size: 75; font-weight: bold; color: white;">Завдання 3</H1>
+</div>
+<div class="z4" style="width: 100%; height: 300px;display: flex; justify-content: center; flex-direction: column; text-align: center; border: 5px solid white; margin-left: 0px; margin-right: 20px; margin-bottom: 10px;">
+<H1 style="font-size: 75; font-weight: bold; color: white;">Завдання 4</H1>
+</div>
+<div class="z5" style="width: 100%; height: 300px;display: flex; justify-content: center; flex-direction: column; text-align: center; border: 5px solid white; margin-left: 0px; margin-right: 20px; margin-bottom: 10px;">
+<H1 style="font-size: 75; font-weight: bold; color: white;">Завдання 5</H1>
+</div>
+</div>
+</body>
+</html>

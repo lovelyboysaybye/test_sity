@@ -1,0 +1,203 @@
+﻿.top                 {
+                     display: inline-block; 
+                     background: #00c5ff;
+                     width: 100%;
+                     height: 38px;
+                     }
+
+.toptext             {
+                     display: inline-block;
+                     }
+.form-inline         {
+                     margin: 2px;
+                     }
+.hhop                {
+                     display: inline-block;
+                     float: right;
+                     }
+.btn-outline-primary {
+                     background: #d7f6ff;
+                     color: #00a1d0;
+                     display: inline-block;
+                     }
+#hh                  {
+                      width: 150px; 
+                      font-size: 100;
+                      height: 15%;
+                     }      
+#hhh                 {
+                      width: 150px; 
+                      font-size: 100;
+                      height: 15%;
+                     }
+#hhhh                {
+                      width: 150px; 
+                      font-size: 100;
+                      height: 15%;
+                     }            
+.k                   {
+                     margin-top: -60px
+                     }
+.kk                  {
+                     margin-top: -60px
+                     }    
+#a1                  {
+                     width: 150px;
+                     font-size:20;
+                     margin-left: 111px;
+                     }   
+#a2                  {
+                     width: 257px;
+                     font-size:23;
+                     }   
+#a3                  {
+                     width: 150px;
+                     font-size:20;
+                     } 
+#b11                 {
+                     width: 150px; 
+                     float: right; 
+                     margin-top: -230px;
+                     margin-right: 40px;
+                     }
+#b22                 {
+                     width: 150px;
+                     float: right; 
+                     margin-top: -150px;
+                     margin-right: 40px;
+                     }        
+.el                  {
+                     left:50%; margin-left:-150px;
+                     }            
+#ou2                 {
+                     width: 200px;
+                     }       
+#hh3                 {
+                     margin-left: 10px;
+                     }  
+#z                   {
+                     margin-top: -280px;
+                     }
+#hh4                 {
+                     margin-left: 25px;
+                     margin-top: -230px;
+                     width: 180px;
+                     }
+.z2                  {
+                     height: 300px;
+                     }
+.z                   {
+                     height: 300px;
+                     }
+@media only screen and (max-width: 767px)
+                     {
+                      .toptext     {
+                                   display: none;  
+                                   }
+                      .hhop        { 
+                                   float: left;
+                                   }
+                      .top         {
+                                   display: flex;
+                                   }
+                      .option-button { 
+                                     display: flex;
+                                     margin-right: 2px;
+                                     margin-left: 2px;
+                                     height: 34px;
+                                     }
+                      .top         {
+                                   display: flex;
+                                   justify-content: center;
+                                   }
+                      .form-inline {
+                                   display: flex;
+                                   justify-content: center;
+                                   }
+
+
+                     }
+@media only screen and (max-width: 867px)
+                    {  
+#z                   {
+                     margin-top: -355px;
+                     }
+#b11                 {
+                       margin-top: 10px;
+                       float: left;
+                      margin-left: 20vw;
+                      width: 150px;
+                     }
+#b22                 { 
+                     float: left;
+                     margin-left: 0px;
+                     margin-top: 10px;
+                     width: 150px;
+                     }     
+#hh4                 {
+                     margin-top: 90px;
+                     width: 100vw;
+                     margin-left: 0px;
+                     }
+.z2                  {
+                     height: 445px;
+                     }
+.z                   {
+                     height: 445px;
+                     }
+                    }
+@media only screen and (max-width: 720px){
+                      .el {
+                          margin-left: -65px;
+                          }
+                      .k {
+                          margin-top:-25px;
+                          width: 50px;
+                         }
+                      .kk{
+                          margin-top:-25px;
+                          width: 50px;
+                         }
+                      #hh{
+                          width: 120px;
+                          font-size: 70;
+                         }
+                      #hhh{
+                          width: 120px;
+                          font-size: 70;
+                         }
+                      #hhhh{
+                          width: 120px;
+                          font-size: 70;
+                           }
+                      #a1{
+                          width: 120px;        
+                          font-size:16;    
+                          margin-left: 57px;
+                         } 
+                      #a2{
+                          width: 174px;        
+                          font-size:15; 
+                          text-align: left;
+                         } 
+                      #a3{
+                          width: 120px;        
+                          font-size:16;    
+                         } 
+
+
+
+                     }
+.hhead               {
+                     overflow: hidden; 
+                     background: linear-gradient(to top, #8ae4ff, #c9f3ff);
+                     width: 100%;
+                     height: 300px; 
+                     overflow: hidden; 
+                     }
+.zz                  {
+                     background: linear-gradient(to top, #00c5ff, #99e6fc);
+                     width: 100%;
+                     height: 1200px; 
+
+                     }

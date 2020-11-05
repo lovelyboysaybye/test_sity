@@ -1,0 +1,22 @@
+﻿<html>
+ 
+<head>
+ 
+<title>Гра в Математику</title>
+ 
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta charset=UTF8>
+ 
+</head>
+ 
+<body>
+ 
+<header><H1 align="center">Це мій сайт, створений для вивчення тегів HTML</H1>
+</header>
+
+<footer>
+<H5>Сайт робив студент групи ФеІ-21 Цемко Андрій</H5>
+</footer>
+</body>
+ 
+</html>
